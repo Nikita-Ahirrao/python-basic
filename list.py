@@ -38,6 +38,71 @@ print(courses)
 courses.remove('ba')
 print(courses)    # ba is removed
 
-# To sort a list, use sort()
-courses.sort()         # this should give error, read below. you can comment it if you don't want to see the red mark
-print(courses)
+# Let's define new list
+fruits = ['mango', 'apple', 'orange', 'kiwi', 'pineapple', 'papaya']
+print(fruits)
+fruits.sort()
+print(fruits)
+fruits.reverse()
+print(fruits)
+
+# Similary, sort works on the list with only numbers as well
+nums = [12, 4, 2, 11, 1, 100]
+print(nums)
+nums.sort()
+print(nums)
+
+#functions that can be used with List
+countries = ['Russia', 'India', 'US', 'Japan', 'Germany', 'Italy', 'Zambia']
+print(len(countries))
+
+nums = [8, 4, 2, 1, 16]     # Returns the highest number, when list is of numbers
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+
+#Iterating a list
+countries = ['Russia', 'India', 'US', 'Japan', 'Germany', 'Italy', 'Zambia']
+#Let's define a simple for loop
+
+for item in countries:            # item could be changed by any other random name. 
+  print(item)
+  
+# Let's spice up the things little bit
+
+for item in countries:
+  print(item, len(item))
+  
+for item in countries:
+      print(f'{item} --- {item.upper()} --- {len(item)}')  # f string allows to easily combine our print strings and python codes  
+
+for item in countries:
+  print(f'{item} --- {item.upper()} --- {len(item)}')  # f string allows to easily combine our print strings and python codes
+  
+# let's try to create a list using for loop and append()
+cubes = []    # first define a blank list
+for i in range(5):       # you can explore what range(5) gives. In short, it returns numbers upto 5. 
+  cubes.append(i ** 3)
+print(cubes)  
+
+# To deconstruct what is exactly happening in the above code, you can use print() like this
+
+cubes = []    
+for i in range(5):       
+  print("i = ", i)
+  cubes.append(i ** 3)
+  print("Number appended (i ** 3) = ", i ** 3)
+  print("Current status of cubes list = ", cubes)
+print()
+print('Outside for loop')
+print(cubes)
+
+#Nested list
+fruits = [['mango','apple','pineapple'], ['sitafal', 'orange']]
+print(fruits)
+print(len(fruits))
+print(fruits[0], type(fruits[0]))
+print(fruits[1], type(fruits[1]))
+print(fruits[0][0])
+print(fruits[1][0])
+print(fruits[0][2])
