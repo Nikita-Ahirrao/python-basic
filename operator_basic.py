@@ -110,8 +110,9 @@ print(type(a))
 #Typecasting with input()
 num = input('Enter Any Number : ')
 print(num,type(num))
-n=int(num)
-print(n,type(n))
+
+#n=int(num)
+#print(n,type(n))
 
 # Carry addition of two user-inputted numbers
 num1 = input('Enter first number:  ')
